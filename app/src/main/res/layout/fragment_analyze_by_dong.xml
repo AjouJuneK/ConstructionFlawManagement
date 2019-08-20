@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AnalyzeByDongFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/rounded_corner_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!--for space-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="동"
+                        android:textSize="16dp"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="하자 수(건)"
+                        android:textSize="16dp"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <!--for space-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/analysisByDongFragmentLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:orientation="vertical">
+
+                    <!--pie chart-->
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/dongPieChart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+
+                    <!--<LinearLayout-->
+                        <!--android:id="@+id/linearLayout"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="72dp"-->
+                        <!--android:orientation="vertical">-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="24dp"-->
+                            <!--android:orientation="horizontal">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/byDongTop1"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:gravity="center" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/byDongTop2"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:gravity="center" />-->
+
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="24dp">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/byDongTop3"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:gravity="center" />-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/byDongTop4"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:layout_weight="1"-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:gravity="center" />-->
+
+                        <!--</LinearLayout>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="24dp">-->
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/byDongTop5"-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="match_parent"-->
+                                <!--android:textSize="20dp"-->
+                                <!--android:textColor="#000000"-->
+                                <!--android:gravity="center" />-->
+
+                        <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

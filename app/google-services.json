@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "65381859297",
+    "firebase_url": "https://constructionflawmanageme-bf357.firebaseio.com",
+    "project_id": "constructionflawmanageme-bf357",
+    "storage_bucket": "constructionflawmanageme-bf357.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65381859297:android:8afda02c7bd3cef4",
+        "android_client_info": {
+          "package_name": "xyz.cfm.constructionflawmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "65381859297-42q4tpjf452aedduocb7vol4me65tde9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDA5fcX82F9qoAJ0g0tN4dbmM4Xm_SP0hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "65381859297-42q4tpjf452aedduocb7vol4me65tde9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CheckListPhotoFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EAEAEA">
+
+        <TextView
+            android:id="@+id/checkListPhotoFragmentSpinnerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="협력업체 : "
+            android:textSize="16dp"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toStartOf="@+id/checkListPhotoFragmentSpinner"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Spinner
+            android:id="@+id/checkListPhotoFragmentSpinner"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/black_border_in_white_drawable"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="vertical"
+            android:background="@drawable/rounded_corner_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkListPhotoFragmentSpinner">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="업체"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="동"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="호수"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="실"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="center"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:text="하자내용"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:textSize="16dp" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:text="-"-->
+                    <!--android:textSize="16dp"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:gravity="center"/>-->
+
+            <!--</LinearLayout>-->
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/checkListPhotoFragmentLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
